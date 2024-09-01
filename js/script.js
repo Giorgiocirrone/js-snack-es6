@@ -29,19 +29,37 @@ Id  Name                Grades
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
+
+//mandare una lsita di opsiti , ma vogliamo un array di oggetti 
+
+//crazione di un nuvo array basato su quello che abbiamo già 
+
+
+
+const table = 'tavolo vip';
+
+const names = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello'];
+
+
+const guestList = names.map((name, i) => {//si aspetta solo un callback
+
+
+    const guest = {
+
+        name: name,
+        table: table,
+        place: i + 1
+    }
+
+
+
+
+    return guest;
+
+
+
+});
+
+
+console.log(guestList);
