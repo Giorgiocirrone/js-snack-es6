@@ -82,3 +82,92 @@ for (let i = 0; i < nomi.length; i++) {
 console.log(nomiCapitalizzati);
 
 
+
+
+
+/*correzione riccardo 
+
+
+
+//creazione array di stringhe 
+
+const strings = ['topolina','topoLINo','EstrEmaCaSEWord','pippo','PLUTO','Paperino'];
+
+
+cosnt formattatedStrings = strings.map((word) => {
+
+
+    //prendo il primo carattere della parola e lo trasformo in uppercase
+
+    const firstChar = wod.charAt(0).toUpperCase(); 
+
+    const restOfWord  = word.substring(1).tolowercase ;
+
+
+    //nell'utlima fase si mette tutto in una riga 
+
+
+    
+)};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/*
+Crea un array di oggetti che rappresentano degli animali.
+Ogni animale ha un nome, una famiglia e una classe.
+Es:
+[
+  { nome: 'leone', famiglia: 'felidi', classe: 'mammiferi' },
+  { nome: 'cane', famiglia: 'canidi', classe: 'mammiferi' },
+  { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
+]
+Crea un nuovo array con la lista dei mammiferi.
+*/
+
+
+//creazione array  con la lista dei mammiferi in aggiunta a quello precedente 
+
+const animali = [
+    { nome: 'leone', famiglia: 'felidi', classe: 'mammiferi' },
+    { nome: 'cane', famiglia: 'canidi', classe: 'mammiferi' },
+    { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
+    { nome: 'elefante', famiglia: 'elefantidi', classe: 'mammiferi' },
+    { nome: 'serpente', famiglia: 'colubridi', classe: 'rettili' },
+    { nome: 'aquila', famiglia: 'accipitridi', classe: 'uccelli' },
+    { nome: 'gatto', famiglia: 'felidi', classe: 'mammiferi' },
+    { nome: 'tartaruga', famiglia: 'testudinidi', classe: 'rettili' }
+];
+
+//piccola validazione 
+
+console.log(animali);
+
+
+//adesso 'selezionare solo i mammiferi'
+
+
+const mammiferi = animali.filter(animale => animale.classe === 'mammiferi');
+//validazione 
+console.log(mammiferi);
