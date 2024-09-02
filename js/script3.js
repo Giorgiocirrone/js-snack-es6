@@ -171,3 +171,75 @@ console.log(animali);
 const mammiferi = animali.filter(animale => animale.classe === 'mammiferi');
 //validazione 
 console.log(mammiferi);
+
+
+
+/*
+
+
+cosnt mammiferi =[]
+
+
+animali.forEach((animal)) => {
+
+    if (elementi.classe === 'mammiferi'){
+
+    mammiferi.push(anilm)
+    
+    }
+    
+    
+    }
+
+
+
+
+
+
+ */
+
+
+/*
+
+Crea un array di oggetti che rappresentano delle persone.
+Ogni persona ha un nome, un cognome e un'età.
+
+Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e l'indicazione se può guidare, in base all'età.
+
+*/
+
+
+const persone = [
+
+
+    { nome: 'giorgio', cognome: 'cirrone', età: '23' },
+    { nome: 'marco', cognome: 'antonio', età: '16' },
+
+    { nome: 'giulio', cognome: 'cesare', età: '40' },
+
+    { nome: 'tizio', cognome: 'caio', età: '16' },
+    { nome: 'giulio', cognome: 'cerrone', età: '15' },
+
+
+];
+
+
+
+
+const minAge = 18;
+message1 = 'puoi guidare';
+
+message2 = 'non puoi guidare';
+
+
+guiudatori = [];
+
+
+//così facendo vado ad iterare su questo array e con una validazione interna capisco chi può e chi non può guidare 
+const frase = '';
+persone.forEach((persona) => {
+    const frase = `${persona.nome} ${persona.cognome} ${persona.età >= minAge ? message1 : message2}`;
+    guidatori.push(frase);
+});
+
+console.log(guidatori);
