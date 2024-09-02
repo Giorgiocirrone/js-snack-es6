@@ -70,3 +70,73 @@ console.log(leggera);
 
 
 
+// Array di oggetti che descrive alcune squadre di calcio
+const squadre = [
+    {
+        nome: "Squadra 1",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Squadra 2",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Squadra 3",
+        puntiFatti: 45,
+        falliSubiti: 18
+    },
+    {
+        nome: "Squadra 4",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Squadra 5",
+        puntiFatti: 0,
+        falliSubiti: 0
+    }
+];
+
+// Stampa l'array di squadre
+console.log(squadre);
+
+
+//genero numeri randomici 
+
+function getRandomNumber(min, max) {
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+//questa funzione andrà a inserire numeri random nelle proprietà settate a 0 
+
+
+for (let i = 0; i < squadre.length; i++) {
+
+
+    const squadra = squadre[i];
+    squadra.falliSubiti = getRandomNumber(10, 50);
+    squadra.puntiFatti = getRandomNumber(20, 120);
+}
+
+
+
+console.log(squadre);
+
+
+//destrutturazione del dato 
+
+
+const nuovalista = squadre.map((elmento) => {
+
+
+    const { nome, falliSubiti } = elemento;
+    return { nome, falliSubiti };
+});
+
+
+
+console.log(nuovalista);
